@@ -2,8 +2,11 @@
 
 from odoo import models, fields, api
 
-# class inmoviliaria(models.Model):
-#     _name = 'inmoviliaria.inmoviliaria'
+class ProductTemplate(models.Model):
+	_inherit = 'product.template'
+
+	permutar = fields.Boolean(string='Permutar')
+	aselection = fields.Selection([('a', 'A'),('b', 'B')])
 
 #     name = fields.Char()
 #     value = fields.Integer()

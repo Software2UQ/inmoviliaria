@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_herencia_form_view" model="ir.ui.view">
+            <field name="name">Productos</field>
+            <field name="model">product.template</field>
+            <field eval="7" name="priority"/>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="categ_id" position="after">
+                        <field name="permutar" />
+                    </field>              
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>
