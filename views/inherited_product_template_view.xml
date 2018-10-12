@@ -6,10 +6,14 @@
             <field name="model">product.template</field>
             <field eval="7" name="priority"/>
             <field name="inherit_id" ref="product.product_template_only_form_view"/>
-            <field name="arch" type="xml">
+            <field name="arch" type="xml">            
                 <data>
                     <field name="categ_id" position="after">
-                        <field name="permutar" />
+                        <field name="x_direccion"/>
+                        <field name="x_estrato"/>
+                        <field name="x_numHabitaciones"/>
+                        <field name="x_numBanos"/>
+                        <field name="x_vendeArrienda"/>
                     </field>              
                 </data>
             </field>

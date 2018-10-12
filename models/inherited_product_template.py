@@ -5,8 +5,8 @@ from odoo import models, fields, api
 class ProductTemplate(models.Model):
 	_inherit = 'product.template'
 
-	permutar = fields.Boolean(string='Permutar')
-	aselection = fields.Selection([('a', 'A'),('b', 'B')])
+#	permutar = fields.Boolean(string='Permutar')
+#	aselection = fields.Selection([('a', 'A'),('b', 'B')])
 
 #     name = fields.Char()
 #     value = fields.Integer()
