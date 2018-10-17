@@ -6,11 +6,28 @@
             <field name="model">product.template</field>
             <field eval="7" name="priority"/>
             <field name="inherit_id" ref="product.product_template_only_form_view"/>
-            <field name="arch" type="xml">
+            <field name="arch" type="xml">            
                 <data>
                     <field name="categ_id" position="after">
-                        <field name="permutar" />
-                    </field>              
+                        <field name="x_direccion"/>
+                        <field name="x_estrato"/>
+                        <field name="x_numHabitaciones"/>
+                        <field name="x_numBanos"/>
+                        <field name="x_vendeArrienda"/>
+                    </field>
+                    <field name="standard_price" position="after">
+                    	<group>
+                    	<field name="energia"/>
+                    	<field name="gas"/>
+                    	<field name="agua"/>
+                    	<field name="ascensor"/>
+                    	<field name="piscina"/>
+                    	<field name="parqueadero"/>
+                    </group>
+                    </field>
+                    <field name="default_code" position="attributes">       
+                    	 <attribute name="required">True</attribute>
+                    </field>       
                 </data>
             </field>
         </record>
